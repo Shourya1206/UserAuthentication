@@ -10,10 +10,12 @@
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <input type="text" id="username" placeholder="Username">
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="authenticate()">Login</button>
-        <p id="message"></p>
+        <form onsubmit="authenticate(event)">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <p id="message"></p>
+        </form>
     </div>
 </body>
 </html>
